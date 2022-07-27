@@ -1,0 +1,181 @@
+
+.dark-1 {
+    background-color: #242423 !important;
+}
+
+.dark-2 {
+    background-color: #333533 !important;
+}
+
+.light-1 {
+    background-color: #CFDBD5 !important;
+}
+
+.custom-title {
+    font-family:Monoton;
+    font-size:50px;
+}
+
+.twitch_grid{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+#twitch-embed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2%;
+}
+
+#twitch-embed iframe {
+    border: white 5px solid;
+    border-radius: 20px;
+    height: 500px;
+    width: 1000px;
+}
+
+.grid-last-videos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+}
+
+.center-object{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center{
+    text-align: center;
+    text-decoration: overline underline;
+}
+
+.custom-card{
+    padding: 25px;
+    background-color: #CFDBD5;
+    border-radius: 30px;
+    width: 320px;
+    height: 300px;
+    margin: 30px;
+}
+  
+.miniature{
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+  
+.ccard-text{
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+.ccard-date{
+    float: right;
+    margin-top: -3px;
+}
+
+.video-link{
+    color: black;
+    text-decoration: none;
+}
+.video-link:hover {
+    color: red;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .grid-last-videos {
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+    }
+    
+    #twitch-embed iframe {
+        border: white 5px solid;
+        border-radius: 20px;
+        height: 400px;
+        width: 800px;
+    }
+    
+    .custom-card{
+        padding: 15px;
+        background-color: #CFDBD5;
+        border-radius: 30px;
+        width: 320px;
+        height: 300px;
+        margin: 30px;
+    }
+
+    .custom-title {
+        font-family:Monoton;
+        font-size: 40px;
+    }
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    .grid-last-videos {
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+    }
+    
+    #twitch-embed iframe {
+        border: white 5px solid;
+        border-radius: 20px;
+        height: 350px;
+        width: 600px;
+    }
+    
+    .custom-card{
+        padding: 15px;
+        background-color: #CFDBD5;
+        border-radius: 30px;
+        width: 320px;
+        height: 300px;
+        margin: 30px;
+    }
+    .custom-title {
+        font-family:Monoton;
+        font-size: 35px;
+    }
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #twitch-embed iframe {
+        border: white 5px solid;
+        border-radius: 20px;
+        height: 220px;
+        width: 350px;
+    }
+    
+    .custom-card{
+        padding: 15px;
+        background-color: #CFDBD5;
+        border-radius: 30px;
+        width: 320px;
+        height: 300px;
+        margin: 30px;
+    }
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    .custom-title {
+        font-family:Monoton;
+        font-size:25px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/uikit/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3e19a0d831.js" crossorigin="anonymous"></script>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script src="assets/js/uikit/uikit-icons.min.js"></script>
+    <script src="assets/js/uikit/uikit.min.js"></script>
+    <script src="assets/js/get_videos.js"></script>
+    <title>Mitsugi - Youtube</title>
+</head>
+<body class="dark-1">
+
+    <nav class="uk-navbar-container dark-1" uk-navbar>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="https://www.youtube.com/c/Mitsukeios"><img class=" logo" src="assets/images/Youtube_logo.png"></a></li>
+                    <li><a href="https://www.twitch.tv/mitsugi_off"><img class=" logo" src="assets/images/Twitch_logo.png"></a></li>
+                </ul>
+            </div>
+            
+            <div class="uk-navbar-item custom-title">Mitsugi</div>
+                
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="https://www.instagram.com/mrmitsugi/"><img class=" logo" src="assets/images/Instagram_logo.png"></a></li>
+                    <li><a href="https://twitter.com/Mitsugi_MrM"><img class=" logo" src="assets/images/Twitter_logo.png"></a></li>
+                    <!-- <li><a href="https://discord.gg/DwmEcdrz"><img class="uk-padding-small" src="assets/images/Discord_logo.png"></a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="uk-background-image uk-padding-remove">
+        <img src="assets/images/Banniere_mitsu-YT.png">
+    </div>
+
+    <div class="twitch_grid">
+        <div id="twitch-embed"></div>
+    </div>
+
+    <div class="uk-padding"></div>
+
+    <div class="custom-title"><p class="text-center">Mes dernières vidéos</p></div>
+
+    <div class="uk-padding"></div>
+
+    <div class="grid-last-videos center-object" id="last-videos">
+
+    </div>
+    <p style="color: white;text-align: center;">Mitsugi@2022. Site internet développer par DIDIER Simon</p>
+    
+    <div class="uk-padding-small"></div>
+
+</body>
+    <script type="text/javascript">
+        var options = {
+            channel: "mitsugi_off",
+            parent: ["localhost", "mitsugi.testwebsite.simondidier.fr"]
+        }
+        var player = new Twitch.Player("twitch-embed", options);
+    </script>
+</html>
