@@ -38,7 +38,7 @@
 
 .grid-last-videos {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
     place-items: center;
 }
 
@@ -53,11 +53,11 @@
 }
 
 .custom-card{
-    padding: 25px;
+    padding: 20px;
     background-color: #CFDBD5;
     border-radius: 30px;
     width: 320px;
-    height: 300px;
+    height: 270px;
     margin: 30px;
 }
   
@@ -85,11 +85,39 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 1100px) {
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    padding: 5px;
+}
+.informations {
+    grid-column: 2;
+}
+.socials {
+    grid-column: 1;
+}
+
+.informations a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.informations a:hover {
+    color: red;
+}
+
+.logo-footer {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1350px) {
 
     .grid-last-videos {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(3, auto);
         place-items: center;
     }
     
@@ -104,9 +132,38 @@
         padding: 15px;
         background-color: #CFDBD5;
         border-radius: 30px;
-        width: 320px;
-        height: 300px;
-        margin: 30px;
+    }
+
+    .custom-title {
+        font-family:Monoton;
+        font-size: 40px;
+    }
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+
+    .grid-last-videos {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+    }
+    
+    #twitch-embed iframe {
+        border: white 5px solid;
+        border-radius: 20px;
+        height: 400px;
+        width: 800px;
+    }
+    
+    .custom-card{
+        padding: 15px;
+        background-color: #CFDBD5;
+        border-radius: 30px;
     }
 
     .custom-title {
@@ -124,7 +181,7 @@
 
     .grid-last-videos {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1, auto);
         place-items: center;
     }
     
@@ -139,9 +196,6 @@
         padding: 15px;
         background-color: #CFDBD5;
         border-radius: 30px;
-        width: 320px;
-        height: 300px;
-        margin: 30px;
     }
     .custom-title {
         font-family:Monoton;
@@ -150,6 +204,22 @@
     .logo {
         width: 30px;
         height: 30px;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        place-items: center;
+    }
+    .informations {
+        grid-column: 2;
+    }
+    .socials {
+        grid-column: 1;
+    }
+    .logo-footer {
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
     }
 }
 
@@ -167,15 +237,31 @@
         background-color: #CFDBD5;
         border-radius: 30px;
         width: 320px;
-        height: 300px;
-        margin: 30px;
     }
     .logo {
         width: 20px;
         height: 20px;
     }
+    .logo-footer {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
     .custom-title {
         font-family:Monoton;
         font-size:25px;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        place-items: center;
+    }
+    .informations {
+        grid-column: 1;
+        padding: 5px
+    }
+    .socials {
+        grid-column: 1;
+        padding: 5px
     }
 }
